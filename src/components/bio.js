@@ -14,7 +14,7 @@ import { rhythm } from "../utils/typography"
 /**
  * STEP 1: Import the json hooks
  */
-import { useLocalJsonForm, useGlobalJsonForm } from "gatsby-tinacms-json"
+import { useLocalJsonForm } from "gatsby-tinacms-json"
 
 const Bio = () => {
   /**
@@ -56,7 +56,7 @@ const Bio = () => {
     label: "Author bio",
     fields: [
       { name: 'rawJson.author' , label: "Author Name", component: "text" },
-      
+
       { name: 'rawJson.social', label: 'Social Info', component: 'group', fields: [
         {label: "@Twitter", name: "twitter", component: "text"}
       ]}
